@@ -7,7 +7,7 @@ class Cards extends React.Component {
 	}
 	render() {
 		return (
-			<div className="container mt-5">
+			<div className="container mt-5" style={{ fontFamily: 'Poppins' }}>
 				<div className="row">
 					<div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="mb-3" style={{ maxWidth: 540 }}>
@@ -17,16 +17,17 @@ class Cards extends React.Component {
 										src="https://miro.medium.com/max/11782/0*k_WAaynCKINZv1x5"
 										class="img-fluid"
 										alt="computer"
+										style={{ height: 243.73, width: 326.67 }}
 									/>
 								</div>
 								<div class="col-md-8">
 									<div class="card-body">
 										<h6 class="card-title">
-											<b>Card title</b>
+											<b>Real-world projects from industry experts</b>
 										</h6>
 										<p class="card-text">
-											This card has supporting text below as a natural lead-in to additional
-											content.
+											With real world projects and immersive content built in partnership with top
+											tier companies, you’ll master the tech skills companies want.
 										</p>
 										<p class="card-text">
 											<small style={{ color: '#F0123C' }}>
@@ -46,16 +47,18 @@ class Cards extends React.Component {
 										src="https://miro.medium.com/max/11782/0*k_WAaynCKINZv1x5"
 										class="img-fluid"
 										alt="computer"
+										style={{ height: 243.73, width: 326.67 }}
 									/>
 								</div>
 								<div class="col-md-8">
 									<div class="card-body">
 										<h6 class="card-title">
-											<b>Card title</b>
+											<b>Personal career coach and career services</b>
 										</h6>
 										<p class="card-text">
-											This card has supporting text below as a natural lead-in to additional
-											content.
+											You’ll have access to career coaching sessions, interview prep advice, and
+											resume and online professional profile reviews to help you grow in your
+											career.
 										</p>
 										<p class="card-text">
 											<small style={{ color: '#F0123C' }}>
@@ -77,16 +80,17 @@ class Cards extends React.Component {
 										src="https://miro.medium.com/max/11782/0*k_WAaynCKINZv1x5"
 										class="img-fluid"
 										alt="computer"
+										style={{ height: 243.73, width: 326.67 }}
 									/>
 								</div>
 								<div class="col-md-8">
 									<div class="card-body">
 										<h6 class="card-title">
-											<b>Card title</b>
+											<b>1-on-1 technical mentor</b>
 										</h6>
 										<p class="card-text">
-											This card has supporting text below as a natural lead-in to additional
-											content.
+											Get a knowledgeable mentor who guides your learning and is focused on
+											answering your questions, motivating you and keeping you on track.
 										</p>
 										<p class="card-text">
 											<small style={{ color: '#F0123C' }}>
@@ -106,16 +110,17 @@ class Cards extends React.Component {
 										src="https://miro.medium.com/max/11782/0*k_WAaynCKINZv1x5"
 										class="img-fluid"
 										alt="computer"
+										style={{ height: 243.73, width: 326.67 }}
 									/>
 								</div>
 								<div class="col-md-8">
 									<div class="card-body">
 										<h6 class="card-title">
-											<b>Card title</b>
+											<b>Flexible learning program</b>
 										</h6>
 										<p class="card-text">
-											This card has supporting text below as a natural lead-in to additional
-											content.
+											Get a custom learning plan tailored to fit your busy life. Learn at your own
+											pace and reach your personal goals on the schedule that works best for you.
 										</p>
 										<p class="card-text">
 											<small style={{ color: '#F0123C' }}>

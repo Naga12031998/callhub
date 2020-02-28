@@ -10,7 +10,7 @@ class Carousel extends React.Component {
 
 	render() {
 		return (
-			<div className="container-fluid mt-5">
+			<div className="container-fluid mt-5" style={{fontFamily: 'Poppins'}}>
 				<div className="row">
 					<div className="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12">
 						<h1>
@@ -185,7 +185,7 @@ class Carousel extends React.Component {
 												<b>Learn More</b>
 												<span className="mt-1" style={{ float: 'right' }}>
 													<div style={{ color: '#F0123C' }}>
-														<b style={{ backgroundColor: 'white' }} className="img-rounded">
+														<b style={{ backgroundColor: 'white' }} className="rounded">
 															-->
 														</b>
 													</div>

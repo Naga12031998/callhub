@@ -1,54 +1,91 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 
-class Search extends React.Component {
+import './index.css';
+
+class Search extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			searchField: ''
+			activearr: 0,
+			filteredarr: [],
+			showarr: false,
+			userInput: ''
 		};
 	}
+	static propTypes = {
+		arr: PropTypes.instanceOf(Array)
+	};
+	static defaultProps = {
+		arr: []
+	};
 
 	handleChange = (e) => {
+		const { arr } = this.props;
+		const userInput = e.target.value;
+		const filteredarr = arr.filter((arr) => arr.toLowerCase().indexOf(userInput.toLowerCase()) > -1);
 		this.setState({
-			[e.target.name]: e.target.value
+			activearr: 0,
+			filteredarr,
+			showarr: true,
+			userInput: e.target.value
+		});
+	};
+
+	handleClick = (e) => {
+		this.setState({
+			activearr: 0,
+			filteredarr: [],
+			showarr: false,
+			userInput: e.target.innerText
 		});
 	};
 
 	render() {
-		const { searchField } = this.state;
+		const { activearr, filteredarr, showarr, userInput } = this.state;
+		const { handleChange, handleClick } = this;
+		let arrListComponent;
+		if (showarr && userInput) {
+			if (filteredarr.length) {
+				arrListComponent = (
+					<ul className="container text-center" style={{ width: 546.06 }}>
+						{filteredarr.map((arr, index) => {
+							let className;
+							if (index === activearr) {
+								className = 'arractive';
+							}
+							return (
+								<li className={className} key={arr} onClick={handleClick}>
+									{arr}
+								</li>
+							);
+						})}
+					</ul>
+				);
+			} else {
+				arrListComponent = (
+					<div className="no-arr">
+						<em>No Suggestions</em>
+					</div>
+				);
+			}
+		}
+
 		return (
-			<div className="mt-5 mb-5">
-				<div className="container input-group text-center" style={{ maxWidth: 540 }}>
+			<div className="container text-center mt-5">
+				<div>
 					<input
 						type="text"
-						name="searchField"
-						value={searchField}
-						className="form-control shadow dropdown dropdown-toggle"
-                        href="#"
-                        onChange = {this.handleChange}
-						id="dropdownMenuLink"
-						data-toggle="dropdown"
-						aria-haspopup="true"
-						aria-expanded="false"
+						onChange={handleChange}
+						value={userInput}
 						placeholder="what do you want to learn?"
-						aria-label="Username"
-						aria-describedby="basic-addon1"
+						style={{ width: 546.06, height: 59.49 }}
 					/>
-					<div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						<a className="dropdown-item" href="#">
-							Action
-						</a>
-						<a className="dropdown-item" href="#">
-							Another action
-						</a>
-						<a className="dropdown-item" href="#">
-							Something else here
-						</a>
-					</div>
+					{arrListComponent}
 					<span>
 						<button
 							className="btn my-2 my-sm-0"
-							style={{ backgroundColor: '#F0123C', color: '#FFFFFF' }}
+							style={{ backgroundColor: '#F0123C', color: '#FFFFFF', width: 150, height: 59.82 }}
 							type="submit"
 						>
 							Search

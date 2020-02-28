@@ -22,26 +22,27 @@ class Checkout extends React.Component {
 
 	render() {
 		const { status } = this.state;
+		const { handleClick } = this;
 		return (
-			<div className="container mt-5">
-				<h1>
-					<b>Check out our newest and most popular</b>
-				</h1>
-				<h1>
-					<b>Nanodegree programs</b>
-				</h1>
+			<div className="container mt-5" style={{ fontFamily: 'Poppins' }}>
+				<p>
+					<b style={{ fontSize: 41.48 }}>Check out our newest and most popular</b>
+					<br />
+					<b style={{ fontSize: 41.48 }}>Nanodegree programs</b>
+				</p>
 				<h1 style={{ width: 60, height: 5, backgroundColor: '#F0123C' }} />
 				<div className="mt-4">
-					<p>
+					<p style={{ fontSize: 22.81 }}>
 						with our growing catalog of ever 30 Nanodegree programs from begineer<br />o advanced, you're
 						sure to find one that fits yur carre goals
 					</p>
 				</div>
 				<div className="card-deck">
-					<div className="card" style={{borderBottom : '1rem solid grey'}}>
+					<div className="card shadow">
 						<div class="bg-dark text-white">
 							<img
 								src="https://miro.medium.com/max/11782/0*k_WAaynCKINZv1x5"
+								style={{ opacity: 0.3 }}
 								className="card-img"
 								alt="computer"
 							/>
@@ -60,10 +61,11 @@ class Checkout extends React.Component {
 							</h5>
 						</div>
 					</div>
-					<div className="card" style={{borderBottom : '1rem solid grey'}}>
+					<div className="card shadow">
 						<div class="bg-dark text-white">
 							<img
 								src="https://miro.medium.com/max/11782/0*k_WAaynCKINZv1x5"
+								style={{ opacity: 0.3 }}
 								className="card-img"
 								alt="computer1"
 							/>
@@ -82,10 +84,11 @@ class Checkout extends React.Component {
 							</h5>
 						</div>
 					</div>
-					<div className="card" style={{borderBottom : '1rem solid grey'}}>
+					<div className="card shadow">
 						<div className="bg-dark text-white">
 							<img
 								src="https://miro.medium.com/max/11782/0*k_WAaynCKINZv1x5"
+								style={{ opacity: 0.3 }}
 								className="card-img"
 								alt="computer2"
 							/>
@@ -107,10 +110,11 @@ class Checkout extends React.Component {
 				</div>
 				{status ? (
 					<div className="card-deck mt-3">
-						<div className="card" style={{borderBottom : '1rem solid grey'}}>
+						<div className="card shadow">
 							<div class="bg-dark text-white">
 								<img
 									src="https://miro.medium.com/max/11782/0*k_WAaynCKINZv1x5"
+									style={{ opacity: 0.3 }}
 									className="card-img"
 									alt="computer"
 								/>
@@ -129,11 +133,12 @@ class Checkout extends React.Component {
 								</h5>
 							</div>
 						</div>
-						<div className="card" style={{borderBottom : '1rem solid grey'}}>
+						<div className="card shadow">
 							<div class="bg-dark text-white">
 								<img
 									src="https://miro.medium.com/max/11782/0*k_WAaynCKINZv1x5"
 									className="card-img"
+									style={{ opacity: 0.3 }}
 									alt="computer1"
 								/>
 								<div className="card-img-overlay">
@@ -151,10 +156,11 @@ class Checkout extends React.Component {
 								</h5>
 							</div>
 						</div>
-						<div className="card" style={{borderBottom : '1rem solid grey'}}>
+						<div className="card shadow">
 							<div className="bg-dark text-white">
 								<img
 									src="https://miro.medium.com/max/11782/0*k_WAaynCKINZv1x5"
+									style={{ opacity: 0.3 }}
 									className="card-img"
 									alt="computer2"
 								/>
@@ -175,8 +181,13 @@ class Checkout extends React.Component {
 						</div>
 					</div>
 				) : null}
-				<div className='mt-5 text-center'>
-					<button type="button" className="btn btn-outline-danger" onClick={this.handleClick}>
+				<div className="mt-5 text-center">
+					<button
+						type="button"
+						className="btn btn-outline-danger"
+						style={{ width: 247, height: 73 }}
+						onClick={handleClick}
+					>
 						See All Programs
 					</button>
 				</div>

@@ -7,7 +7,7 @@ class Nanodegree extends React.Component {
 	}
 	render() {
 		return (
-			<div className="container mt-5">
+			<div className="container mt-5" style={{fontFamily: 'Poppins'}}>
 				<h1>
 					<b>All our Nanodegree</b>
 				</h1>

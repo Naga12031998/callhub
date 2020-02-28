@@ -7,40 +7,40 @@ class Partners extends React.Component {
 	}
 	render() {
 		return (
-			<div className="mt-5 mb-5 shadow container">
+			<div className="mt-5 mb-5 shadow container" style={{maxWidth : 1403.11}}>
 				<div className="row text-center">
 					<div className="col-xl-3 col-lg-3 col-md-5 col-sm-12 col-xs-12">
 						<img
 							src="https://cdn.designcrowd.com/blog/2016/January/top-company-logos-black/2_Disney_400.png"
-							style={{ width: 100, height: 100 }}
+							style={{ width: 100, height: 100, opacity: 0.3 }}
 							alt="pic1"
 						/>
 					</div>
 					<div className="col-xl-2 col-lg-2 col-md-5 col-sm-12 col-xs-12">
 						<img
-							src="https://cdn.designcrowd.com/blog/2016/January/top-company-logos-black/2_Disney_400.png"
-							style={{ width: 100, height: 100 }}
+                            src="https://cdn.designcrowd.com/blog/2016/January/top-company-logos-black/2_Disney_400.png"
+							style={{ width: 100, height: 100, opacity: 0.3 }}
 							alt="pic2"
 						/>
 					</div>
 					<div className="col-xl-2 col-lg-2 col-md-5 col-sm-12 col-xs-12">
 						<img
 							src="https://cdn.designcrowd.com/blog/2016/January/top-company-logos-black/2_Disney_400.png"
-							style={{ width: 100, height: 100 }}
+							style={{ width: 100, height: 100, opacity: 0.3 }}
 							alt="pic3"
 						/>
 					</div>
 					<div className="col-xl-2 col-lg-2 col-md-5 col-sm-12 col-xs-12">
 						<img
 							src="https://cdn.designcrowd.com/blog/2016/January/top-company-logos-black/2_Disney_400.png"
-							style={{ width: 100, height: 100 }}
+							style={{ width: 100, height: 100, opacity: 0.3 }}
 							alt="pic4"
 						/>
 					</div>
 					<div className="col-xl-2 col-lg-2 col-md-5 col-sm-12 col-xs-12">
 						<img
 							src="https://cdn.designcrowd.com/blog/2016/January/top-company-logos-black/2_Disney_400.png"
-							style={{ width: 100, height: 100 }}
+							style={{ width: 100, height: 100, opacity: 0.3 }}
 							alt="pic5"
 						/>
 					</div>
